@@ -170,6 +170,39 @@ input {
 #sl-12:checked ~ .slider-description > .description-container {
     transform: translateX(-84.612%);
 }
+#sl-13:checked ~ .slider-items > .items-container,
 #sl-13:checked ~ .slider-description > .description-container {
     transform: translateX(-92.304%);
+}
+
+
+@media (max-width: 870px) {
+    body {
+        font-size: 1.2rem;
+        padding: 0 3%;
+    }
+
+    .slider {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 20px;
+    }
+
+    .slider-items {
+        grid-column: span 1;
+    }
+
+    .description-container {
+        margin-top: 10px;
+
+    }
+
+    .slider-nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-nav-item {
+        padding: 0.3rem;
+    }
 }
